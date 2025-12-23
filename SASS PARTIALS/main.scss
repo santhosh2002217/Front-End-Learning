@@ -1,0 +1,18 @@
+@import "variables";
+@import "mixins";
+
+div{
+    @include style;
+    height: 400px;
+    width: 700px;
+    background-color:$color2;
+}
+h1{
+    text-align:$justify-text;
+    color:$color4;
+}
+p{
+    margin: $margin-size;
+    padding: $padding-size;
+    color: $color5;
+}

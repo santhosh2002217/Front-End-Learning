@@ -1,0 +1,37 @@
+*{
+    pad: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes frames{
+    from{
+        height:300px;
+        width: 300px;
+        background-color: coral;   
+        transform: translateX(100px); 
+    }
+    to{
+        height: 500px;
+        width: 500px;
+        background-color: chartreuse;
+        transform: translateX(600px);
+    }
+}
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.box{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    align-content: center;
+    background-color: aqua;
+    /* animation-name: frames;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-direction: alternate; */
+    animation: frames 10s ease-in-out 3s infinite alternate; 
+}

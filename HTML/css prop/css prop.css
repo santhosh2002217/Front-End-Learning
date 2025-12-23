@@ -1,0 +1,56 @@
+/* div{
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    padding: 30px;
+    margin: 70px;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 20px ;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+h1{
+    background-color: aqua;
+} */
+
+/* div{
+    display: none;
+    height: 50px;
+    background-color: brown;
+
+}
+span{
+    visibility: hidden;
+    height: 20px;
+    background-color: aquamarine;
+} */
+/* 
+div{
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    font-variant: normal;
+       
+}
+article{
+    text-align: center;
+    text-decoration: line-through;
+    letter: spacing 20px;
+    word-spacing: 25px
+
+} */
+p{
+    background-image:url(./html\ logo.jfif);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: right;
+    backface-visibility: hidden;
+    background-size: auto;
+    
+}

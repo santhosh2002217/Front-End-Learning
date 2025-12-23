@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@keyframes ANIMATIONFRAME{
+    0%{
+        top: 0px;
+        width: 00px;
+    }
+    25%{
+        top: 100px;
+        width: 100px;
+        left: 50px;
+        background-color: aqua;
+    }
+    50%{
+        top: 150px;
+        width: 150px;
+        left: 100px;
+        background-color: blue;
+    }
+    75%{
+        top: 200px;
+        width: 200px;
+        left: 150px;
+        background-color: blueviolet;
+    
+    }
+    100%{
+        top: 250px;
+        width: 250px;
+        left: 200px;
+        background-color: brown;
+    }
+}
+.container{
+    background-color: chartreuse;
+    position: relative;
+    animation-name: ANIMATIONFRAME;
+    animation-duration: 15s;
+}

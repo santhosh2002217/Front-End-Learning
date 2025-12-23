@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDTIONAL STATEMENTS</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+    // 1.Check if a user is an admin and their account is active, then grant access.
+
+    // let user = prompt("Enter you are admin");
+    // let account = prompt("Enter you account is active");
+
+    // if (user == "admin" && account == "active"){
+    //     console.log("Your access is Granted");
+    // }
+  
+    // else{
+    //     console.log("Your access is Denied");
+    // }
+
+    
+    // 2. Determine if a user is an editor or a moderator, then allow content editing.
+    
+    // let user = prompt("Enter you are editor");
+    // user = prompt("Enter you are moderator");
+
+    // if (user =="editor" || user == "moderator"){
+    //     console.log("Allowed for content editing");
+    // }
+    // else{
+    //     console.log("Not allowed for content editing");
+    // }
+
+
+    // 3. Reject input if it is neither "yes" nor "no".
+    
+    // let input = prompt("Enter your input");
+
+    // if (input=="yes" && input !== "no"){
+    //     console.log("Accepted");
+    // }
+    // else{
+    //     console.log("Rejected");
+    // }
+
+    // 4. Greet a user specially if their name is Alice, or if it is Bob and they have a premium subscription.
+
+    // let user = prompt("Enter a Name");
+    // let subscription = prompt("Have a Subscription")
+
+    // if (user=="Alice" || user=="Bob" && subscription=="premium"){
+    //     console.log("Welcome Buddy");
+    // }
+    
+    
+    // 5. Warn a user if their password is very common or very short.
+
+    // const password = "India@1234";
+    // prompt("Enter your password");
+
+    // if (password=="password"){
+    // console.log("password is correct");
+    // }
+    // else {
+    //     console.log("password is incorrect");   
+    // }
+
+    // 6. Offer a city-specific reward if the user lives in Mumbai or Delhi and has a gold membership.
+
+    // let user = prompt("Enter a City");
+    // let membership = prompt("Have a Membership")
+
+    // if (user=="Munbai" || user=="Delhi" && membership=="gold"){
+    //     console.log("Rewarded");
+    // }
+
+    // 7. Deny login if the user is not an admin, or the account is inactive, or they have failed multiple attempts.
+    // let user = prompt("Enter you are admin");
+    // let account = prompt("Enter your account stauts");
+    // let attempts = prompt("Attempts")
+
+    // if (user!="admin" || account!="active" || attempts>="3" ){
+    // console.log("Login Denied");
+    // }
+    // else{
+    //     console.log("Login Accepted");   
+    // }
+
+
+    // 8. Activate weekend mode if today is Saturday or Sunday and it is a holiday.
+
+    // let today = prompt("Enter a day")
+
+    // if((today==="saturday" || today==="sunday") && today==="holiday"){
+    //     console.log("Weekend mode Activated");        
+    // }
+    // else{console.log("Not a weekend");
+    // }
+
+    
+    <!-- // 9. Notify a name mismatch if it is not Alice, Bob, or Charlie.
+
+    // const name = prompt("Enter a Name");
+    
+    // if (name=="Alice" || name=="Bob" || name=="Charlie"){
+    //     console.log("Name Matched");
+    // }else{ console.log("Name Mismatched")}
+
+    
+
+    // 10. Reward a user if they have enough points and either their account is active or they have a premium subscription.
+     -->
+    
+     const user = prompt("Enter your Points");
+     const account = prompt("Enter account Status");
+     const subscription = prompt("Enter you have subscription");
+
+     if (user=="100" && account=="active" || subscription=="premiuim"){
+     console.log("Rewarded");
+    }else{console.log("Invaild");}
+
+     
+
+
+    
+
+
+
+    
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
