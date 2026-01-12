@@ -127,7 +127,6 @@ function f10(price,tax){
 }
 console.log(f10(110,20));
 
-
 // 11. Write a function that takes an array and returns the first element.
 function f11(arr){
     return arr[0]
@@ -148,13 +147,11 @@ function f13(string){
 }
 console.log(f13("hello world"));
 
-
 // 14. Write a function that returns the area of a rectangle (length, width).
 function f14(l,b){
     return l*b
 }
 console.log(f14(10,8));
-
 
 // 15. Write a function that takes a password and returns "Valid" if the length is at least 8 characters.
 function f15(password){
