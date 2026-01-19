@@ -50,3 +50,14 @@ h2{
     margin-top: 20px;
     font-size: 25px;
 }
+.box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+    height: 40px;
+    width: 85%;
+    border: 1px solid white;
+    padding: 6px;
+}
