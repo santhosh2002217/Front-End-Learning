@@ -36,7 +36,7 @@ input{
     border: none;
     border-radius: 5px;
 }
-button{
+.add-btn{
     height:38px;
     width: 50px;
     margin-left: 5px;
@@ -49,15 +49,12 @@ h2{
     text-align: center;
     margin-top: 20px;
     font-size: 25px;
+    margin-bottom: 15px;
 }
 .box1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: space-evenly;
-    margin: auto;
-    margin-top: 10px;
     height: 40px;
-    width: 85%;
+    width: 90%;
+    margin: auto;
     border: 1px solid white;
-    padding: 6px;
-}
+    border-radius: 5px
+} 

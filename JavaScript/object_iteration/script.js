@@ -54,6 +54,4 @@ Object.values(myobj).forEach((key_value)=>{
 let count = 0;
 Object.keys(myobj)
 
-
-
 // Check whether a given object is empty or not.
