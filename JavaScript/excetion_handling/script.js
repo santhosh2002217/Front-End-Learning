@@ -49,25 +49,24 @@
 // 1️⃣ User Age & Score Validator
 // Task:
 // Ask the user to input age and score.
-// Throw an error if:
+    // Throw an error if:
 // Age is negative or above 120 → "Invalid age"
 // Score is less than 0 or above 100 → "Invalid score"
 // Catch the errors and display the message.
 // Ensure a finally block prints "Validation complete" no matter what.
 // Bonus: If both inputs are valid, print "User data accepted".
 
-let age = prompt("Enter Your Age");
-let score = prompt("Enter Your Score");
+let age = parseInt(prompt("Enter Your Age"));
+let score = parseInt(prompt("Enter Your Score"));
 
 try{
     if(age<0 || age>120){
-        console.log("Invalid age`");
+        throw new Error ("Invalid age")
     }
-    if(score<0 || score>100) {
-        console.log("Invalid Score");
-    } 
-    else {
-        console.log("User data accepted");
+    if(score<0 || score>100){
+        throw new Error("Invalid score")
+    }else{
+        console.log("User data accepted");   
     }
 }
 catch(Error){
