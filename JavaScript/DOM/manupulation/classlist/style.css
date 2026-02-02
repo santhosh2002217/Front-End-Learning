@@ -1,0 +1,13 @@
+.container{
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: cadetblue;
+    color:brown;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    border: 5px solid blueviolet;
+    border-radius: 30px;
+}
