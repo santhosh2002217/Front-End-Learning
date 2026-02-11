@@ -1,3 +1,11 @@
 {
-    "window.autoDetectColorScheme": false
+  "window.autoDetectColorScheme": false,
+  "editor.wordWrap": "off",
+  "editor.fontSize": 16,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "workbench.editor.dragToOpenWindow": false,
+  "workbench.editor.limit.enabled": false,
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.scrollToSwitchTabs": false
 }
