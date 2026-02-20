@@ -40,9 +40,9 @@
 
 // The Temporal Dead Zone refers to the period between the entering of a scope and the actual declaration of a variable using let or const. During this period, the variable is in an "uninitialized" state and accessing it will result in a ReferenceError.
 
-//   console.log(name);
-//   var name = "js";
-//   console.log(name);
+  // console.log(name);
+  // var name = "js";
+  // console.log(name);
 
 // Hoisting is a JavaScript mechanism where the interpreter appears to move the declarations of functions, variables, and classes to the top of their containing scope during the compilation phase, before the code is executed.
 
@@ -52,12 +52,12 @@
 //   }
 
 // Lexical scope is a fundamental concept in programming that determines the accessibility of variables and functions based on where they are defined in the source code
-//   function show() {
-//     var a = 30;
-//     console.log(a);
-//   }
-//   show();
-//   console.log(a);
+  // function show() {
+  //   var a = 30;
+  //   console.log(a);
+  // }
+  // show();
+  // console.log(a);
 
 
 //   function show() {
@@ -80,62 +80,60 @@
 // The arguments object in JavaScript is a built-in, array-like object that is locally accessible inside all non-arrow functions. 
 
 
-function show1(num , ...nums){
-    console.log(num);
-    console.log(nums);
+// function show1(num , ...nums){
+//     console.log(num);
+//     console.log(nums);
  
-}
-show1(1, 2, 3, 4, 5,6) //rest operator
+// }
+// show1(1, 2, 3, 4, 5,6) //rest operator
 
 
-function show(num){
-    console.log(num)
-    console.log(arguments);
+// function show(num){
+//     console.log(num)
+//     console.log(arguments);
     
-}
-show(1, 2, 3, 4, 5, 6)
+// }
+// show(1, 2, 3, 4, 5, 6)
 
 // // A higher-order function in JavaScript is a function that does at least one of the following: 
 // // Takes one or more functions as arguments (often called callback functions).
 // // Returns a function as its result. 
 
-function greet(name, callback, call){
-    console.log(name);
-    callback()  
-    call() 
+// function greet(name, callback, call){
+//     console.log(name);
+//     callback()  
+//     call() 
+// }
 
-}
+// function show(){
+//     console.log("How are You");    
+// }
 
-function show(){
-    console.log("How are You");    
-}
-
-function word(){
-    console.log("Santhosh");
+// function word(){
+//     console.log("Santhosh");
     
-}
-greet("Hi", show, word)
+// }
+// greet("Hi", show, word)
 
 
 // Closure
 // In JavaScript, a closure is the combination of a function and its surrounding state (its lexical environment). A closure allows an inner function to retain access to variables from its outer scope, even after the outer function has finished executing. 
 
 
-function makeCounter() {
-  let count = 0; // The variable to be "closed over"
+// function makeCounter() {
+//   let count = 0; // The variable to be "closed over"
 
-  function increment() {
-    count++;
-    return count;
-  }
-  return increment; // Return the inner function
-}
+//   function increment() {
+//     count++;
+//     return count;
+//   }
+//   return increment; // Return the inner function
+// }
 
-const counter1 = makeCounter();
-console.log(counter1());
-console.log(counter1());
+// const counter1 = makeCounter();
 // console.log(counter1());
-
+// console.log(counter1());
+// console.log(counter1());
 // console.log(counter1());
 // console.log(counter1());
 // console.log(counter1());
@@ -145,22 +143,144 @@ console.log(counter1());
 // The this keyword in JavaScript is a special identifier that references the object in whose context the current function is executing
 
 // Alone in the global context: this refers to the global object (window in a browser).
-console.log(this);  
+// console.log(this);  
 
 // In a regular function (strict mode): this is undefined.
-function enter(){
-    console.log(this);   
-}
-enter()
+
+// "use strict";
+
+// function showThis() {
+//   console.log(this);
+// }
+// showThis(); // Output: undefined
+
 
 
 // In event handlers: When used as an event handler (e.g., in an addEventListener callback), this typically refers to the DOM element that triggered the event. 
 
-let mybtn = document.getElementById("btn")
+// let mybtn = document.getElementById("btn")
 
-mybtn.addEventListener("click", function(){
-    this.style.backgroundColor = "red"
-})
+// mybtn.addEventListener("click", function(){
+//     this.style.backgroundColor = "red"
+// })
 
 
+// ✅ 1. call()
+// 🔹 Definition:
 
+// call() invokes (calls) a function immediately and allows you to pass arguments one by one.
+
+// const person1 = {
+//   name: "Alice"
+// };
+// function greet(age) {
+//   return `Hi, I'm ${this.name} and I'm ${age} years old.`;
+// }
+// console.log(greet.call(person1, 25));
+
+
+// ✅ 2. apply()
+// 🔹 Definition:
+// apply() is the same as call(), but arguments are passed as an array.
+// const person2 = {
+//   name: "Santhosh"
+// };
+// function greet(...age) {
+//   return `Hi, I'm ${this.name} and I'm ${age} years old.`;
+// }
+// console.log(greet.apply(person1, [25, 36 , 36, 36, 37]));
+
+
+// ✅ 3. bind()
+// 🔹 Definition:
+// bind() does NOT call the function immediately.
+// It returns a new function with this permanently set.
+
+// const user = {
+//   name: "David"
+// };
+
+// function sayHello() {
+//   console.log(`Hello, ${this.name}`);
+// }
+
+// const boundFunction = sayHello.bind(user);
+
+// boundFunction(); 
+// Hello, David
+
+
+// async and await
+// These are modern JavaScript keywords (introduced in ES2017) that allow developers to write asynchronous code in a clean, synchronous-like manner, significantly improving readability and maintainability over traditional promise chains. 
+// const mypromise = new Promise((res, reject)=>{
+//     setTimeout(()=>{
+//         const success = true
+
+//         if(success){
+//             res("I am Success") 
+//         }else{
+//             reject("I am not Success")
+//         }
+//     },1000)   
+// })
+
+// mypromise
+// .then((res)=>{
+//     console.log(res);
+// })
+// .catch((reject)=>{
+//     console.log(reject);
+// })
+
+// async function output() {
+//   try{
+//       const result = await mypromise
+//     console.log(result);
+//   }catch(error){
+//     console.log(error);   
+//   } 
+// }
+// output()
+
+
+// Prototype inheritance is a JavaScript feature where objects directly inherit properties and methods from other objects, rather than from classes.
+
+const animal = {
+    eats: true
+};
+
+const dog = {
+    barks: true
+};
+
+Object.setPrototypeOf(dog, animal)
+
+console.log(animal.eats);
+console.log(animal.barks);
+console.log(dog.eats);
+
+
+const person3 = {
+  name:"sandy",
+  age: 23
+}
+const person4 = {
+  address:"pondy",
+  country:"india"
+}
+
+Object.setPrototypeOf(person4,person3)
+console.log(person3.country);
+console.log(person4.address);
+console.log(person4.age);
+
+
+const person_1 = {
+  active:true
+}
+const person_2 = {
+  status:true
+}
+Object.setPrototypeOf(person_1,person_2)
+console.log(person_1.status);
+console.log(person_2.active);
